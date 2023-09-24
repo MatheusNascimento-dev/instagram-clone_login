@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #fff;
+    
+  }
+  
+  #wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 92.5rem;
+    margin: 8em auto 0;
+  
+  }
+  
+  #wrapper > .container {
+    display: flex;
+    padding: 0 8rem;
+  }
+  
+  
+  
+  .form-data {
+    width: 100%;
+    max-width: 35rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    
+  }
+  
+  .form-data form {
+    background-color: #fff;
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    text-align: center;
+ 
+    
+  }
+  
+  .logo img {
+    width: 19.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  
+  .form-data form input {
+    width: 100%;
+    height: 4rem;
+    font-size: 13px;
+    border-radius: .4rem; 
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    outline: none;
+    padding: 10px;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+   
+  }
+
+  .form-data form input:focus{
+
+    border-color: #A8A8A8;
+
+  }
+  
+  .form-btn {
+    display: block;
+    margin: 1rem 0 1.5rem;
+    height: 3rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   background-color: #4DB5F9;
+
+  }
+  
+  .separador {
+    font-size: 1.3rem;
+    color: rgb(115, 115, 115);
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    
+   
+}
+
+.separador::before{
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #DBDBDB ;
+    margin-top: 5px;
+    margin-left: -115px;
+}
+
+.separador::after{
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #DBDBDB;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+  .facebook-login {
+    font-size: 14px;
+    font-weight: bold;
+    color: #385185;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .facebook-login i {
+    font-size: 2rem;
+    margin-right: .7rem;
+  }
+  
+  .password-reset {
+    font-size: 12px;
+    color: #003569;
+  }
+  
+  .sign-up {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000;
+    padding: 2rem 0;
+    background-color: #fff;
+    border: 1px solid rgb(219, 219, 219);
+    margin: 1rem 0;
+  }
+  
+  .sign-up a {
+    color: #3897f0;
+    font-weight: bold;
+  }
+  
+  .get-the-app {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .get-the-app span {
+    display: block;
+    margin: 2rem 0;
+    color: #000;
+  }
+  
+  .badges {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    align-self:center;
+  
+  }
+  
+  .badges img {
+    
+    width: 150px;
+    display: block;
+    cursor: pointer;
+    
+  }
+
+  .rodape{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: #737373;
+    padding-bottom: 3rem;
+  }
+  
+  
+  
+  /* RESPONSIVIDADE */
+
+  @media (max-width: 1024px){
+
+
+    .copy{
+
+        margin-top: 80px;
+
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    .phone-app-demo {
+      display: none;
+      flex-wrap: wrap;
+      margin-right: 15px;
+    }
+  
+    .form-data {
+      margin: 0 auto;
+    }
+    
+    .wrapper > .container {
+      padding: 0;
+    }
+  
+  }
+
+  @media (max-width: 410px) {
+    
+    .form-data {
+        width: 100%;
+      margin: 0 auto;
+    }
+    
+    .wrapper > .container {
+      padding: 0;
+    }
+    
+    .facebook-login{
+     
+        white-space: nowrap;
+
+    }
+
+    .separador::before{
+        
+        display: none;
+    }
+    .separador::after{
+        
+     display: none;
+    }
+  }
+
+  @media (max-width: 376px){
+
+    .sign-up{
+
+     flex-wrap: wrap;
+     white-space: wrap;
+
+    }
+
+}
+
+@media (max-width: 384px){
+
+
+    .copy{
+
+        margin-top: 30px;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+
+    .facebook-login{
+     
+        white-space: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .separador::before{
+        
+        display: none;
+    }
+    .separador::after{
+        
+     display: none;
+    }
+
+    .copy{
+
+        margin-top: 30px;
+
+    }
+
+  }
+
+  @media (max-width: 280px){
+
+    .form-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: 0 -50px;
+    }
+
+    .sign-up{
+        
+        padding: 10px;
+        flex-wrap: wrap;
+        white-space: wrap;
+        
+       }
+
+    .get-the-app .badges{
+
+    display: flex;
+    flex-direction: column;
+
+       }
+
+  } 
