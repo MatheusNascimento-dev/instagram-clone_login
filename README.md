@@ -13,6 +13,11 @@ O projeto consiste em um clone da página de login do Instagram. Ele inclui um f
 
 O estilo e layout da página foram criados com CSS para se assemelhar ao visual do Instagram. O projeto é responsivo e se adapta a diferentes tamanhos de tela.
 
+## Imagem do Projeto
+
+![image](https://github.com/MatheusNascimento-dev/instagram-clone_login/assets/141882739/750d9190-b23b-4bc2-b4b4-2fc0a9bf25bf)
+
+
 ## Pré-requisitos
 Antes de iniciar o projeto, é necessário ter um conhecimento básico em HTML e CSS. Certifique-se de ter um navegador web instalado para visualizar a página.
 
